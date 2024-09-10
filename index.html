@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Luana Barbosa</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- i18next CDN -->
+    <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
+    <!-- jquery-i18next CDN -->
+    <script src="https://unpkg.com/jquery-i18next@latest/dist/umd/jquery-i18next.min.js"></script>
+</head>
+
+<body>
+
+
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" data-i18n="header.toolbar">Seja bem-vindo</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#about" data-i18n="about.title">Sobre
+                            mim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience"
+                            data-i18n="experience.title">Experiência</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacts" data-i18n="contact.title">Contatos</a>
+                    </li>
+                </ul>
+                <div style="margin-left: 50px">
+                    <!-- Bandeiras para alternar idioma -->
+                    <img src="img/2-bandeira-do-brasil.webp" class="flag-icon" id="lang-pt" alt="Português">
+                    <img src="img/bandeira-estados-unidos.webp" class="flag-icon" id="lang-en" alt="English">
+                    <img src="img/bandeira-da-espanha.webp" class="flag-icon" id="lang-es" alt="Espanhol">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header - set the background image for the header in the line below-->
+    <header class="py-3 background-image" id="about"style="background-image: url('img/image1.gif')">
+        <div class="text-center my-5">
+            <img class="img-fluid rounded-circle mb-4 profile-image" src="img/profile.jpeg" alt="..." />
+            <h1 class="text-white fs-8 fw-bolder" data-i18n="header.name">Luana Barbosa</h1>
+            <h3 class="text-white fs-3 fw-bolder" data-i18n="header.title" style="padding-bottom: 76px;" >Desenvolvedora
+                Android</h3>
+        </div>
+    </header>
+
+    <!-- Content section-->
+    <section class="py-5" style="margin-top: 90px;" >
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <h2 data-i18n="about.title">Sobre mim</h2>
+                <p class="lead" data-i18n="about.description">Nascida em Salvador, buscando o meu lugar no mundo,
+                    atualmente atuando na área de
+                    tecnologia em desenvolvimento Android, graduada em análise de sistemas, sou completamente fascinada
+                    pela área, gosto de desafios e aprender cada vez mais para ser a melhor no que faço. Busco atuar na
+                    área de tecnologia utilizando as minhas skills com o que há de mais novo no mercado, participando de
+                    projetos, desenvolvimentos e análises de software, podendo assim crescer profissionalmente.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content section-->
+    <hr class="m-10 thick-hr"id="experience">
+    <section class="py-5"  style="margin-top: 90px;">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <h2 data-i18n="experience.title">Experiência</h2>
+                <h1 style="margin-top: 30px" class="text-black fs-5 fw-bolder" data-i18n="experience.cora.title">Cora
+                </h1>
+                <p class="lead" data-i18n="experience.role">Desenvolvedora Android</p>
+                <p class="mb-0" data-i18n="experience.cora.description">Implemento novas funcionalidades e melhorias no
+                    recurso Coraliados usando
+                    Kotlin/Compose, garantindo que o código seja eficiente, escalável e bem estruturado. Realizo
+                    manutenção contínua do recurso, identificando e corrigindo bugs, além de otimizar a performance e
+                    estabilidade da aplicação, usando MVVM, Navigation, Compose, Retrofit, Koin, entre outros.</p>
+                <div class="resume-date text-md-right">
+                    <span class="resume-date" data-i18n="experience.cora.date">Mai/2024 - Atualmente</span>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <h1 style="margin-top: 30px" class="text-black fs-5 fw-bolder" data-i18n="experience.petz.title">Petz
+                </h1>
+                <p class="lead" data-i18n="experience.role">Desenvolvedora Android</p>
+                <p class="mb-0" data-i18n="experience.petz.description">Atuei na criação e manutenção da fidelidade do
+                    usuário, usando Kotlin, arquitetura MVVM,
+                    MVP e bibliotecas como: Coroutines, Retrofit, Mockito Koin, Jetpack Compose, Junit4 entre outros.
+                    Fiz entregas como aba de Fidelidade, Ofertas e Cupons.</p>
+                <div class="resume-date text-md-right">
+                    <span class="resume-date" data-i18n="experience.petz.date">Jul/2022 - Mai/2024</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <h1 style="margin-top: 30px" class="text-black fs-5 fw-bolder" data-i18n="experience.boticario.title">
+                    Grupo Boticário</h1>
+                <p class="lead" data-i18n="experience.role">Desenvolvedora Android</p>
+                <p class="mb-0" data-i18n="experience.boticario.description">Desenvolvi a conta Digital da Revendedora,
+                    este aplicativo está foi desenvolvido usando
+                    Kotlin, arquitetura MVP. Fiz entregas de Clean Code e Arquitetura e soluções de bug por ser um app
+                    que está sendo remontado para uma nova estrutura MVVM.</p>
+                <div class="resume-date text-md-right">
+                    <span class="resume-date" data-i18n="experience.boticario.date">Fev/2022 - Out/2022</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content section-->
+    <hr class="m-10 thick-hr">
+    <section class="py-5" style="margin-top: 90px;">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <h2 data-i18n="education.title">Formação Acadêmica</h2>
+                <h1 style="margin-top: 30px" class="text-black fs-5 fw-bolder">Uninter</h1>
+                <p class="lead" data-i18n="education.course">Análise e Desenvolvimento de Sistemas</p>
+                <p class="mb-0" data-i18n="education.description">Forma profissionais capazes de desenvolver, analisar,
+                    projetar, implementar e atualizar
+                    sistemas de informação para diversos setores de atividades, onde adquirimos uma base teórica solida
+                    e uma intensa vivência prática na programação de projetos.</p>
+                <div class="resume-date text-md-right">
+                    <span class="resume-date" data-i18n="education.date">Abr/2020 - Ago/2022</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content section-->
+    <hr class="m-10 thick-hr">
+    <section class="py-5" style="margin-top: 90px;">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <h2 data-i18n="skills.title">Habilidades</h2>
+                <h1 style="margin-top: 30px" class="text-black fs-5 fw-bolder" data-i18n="skills.subtitle">Linguagens de
+                    Programação & Ferramentas
+                </h1>
+                <ul class="list-inline dev-icons">
+                    <li class="list-inline-item">
+                        <i class="fab fa-html5 dev-icons"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-css3-alt dev-icons"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-java dev-icons"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-android dev-icons"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-figma dev-icons"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-git dev-icons"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-github dev-icons"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-jira dev-icons"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-mobile dev-icons"></i>
+                    </li>
+                </ul>
+
+                <i class="fas fa-atom icon-list"></i> Kotlin</li>
+                <i class="fas fa-atom icon-list"></i> Compose</li>
+                <i class="fas fa-atom icon-list"></i> Git/GitFlow </li>
+                <i class="fas fa-atom icon-list"></i> Github</li>
+                <i class="fas fa-atom icon-list"></i> <span data-i18n="skills.mvvm">MVVM e Arquitetura Limpa</span></li>
+                <i class="fas fa-atom icon-list"></i> <span data-i18n="skills.agile">Metodologias Ágeis</span></li>
+                <i class="fas fa-atom icon-list"></i> Firebase</li>
+                <p><i class="fas fa-atom icon-list"></i> <span data-i18n="skills.unit_tests">Testes Unitários</span>
+                    </li>
+                    <i class="fas fa-atom icon-list"></i> Android SDK</li>
+                    <i class="fas fa-atom icon-list"></i> Android Jetpack Components</li>
+                    <i class="fas fa-atom icon-list"></i> CI/CD</li>
+                    <i class="fas fa-atom icon-list"></i> Play Store</li>
+                    <i class="fas fa-atom icon-list"></i> <span data-i18n="skills.rest">REST e JSON</span></li>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Content section-->
+    <hr class="m-10 thick-hr"id="contacts">
+    <section class="py-5"  style="margin-bottom: 90px;">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <h2 data-i18n="contact.title">Redes Sociais e Contato</h2>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/luana-barbosa93/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/luana-barbosa">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:luana_barbosa93@hotmail.com">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                    <a href="https://wa.me/551185117374">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+                <h1 style="margin-top: 30px" class="text-black fs-5 fw-bolder" data-i18n="contact.location">Salvador/BA
+                    - Brasil</h1>
+                <h1 class="lead">E-mail: luana_barbosa93@hotmail.com</h1>
+                <h1 class="lead" data-i18n="contact.phone">Contato: (+55) 11 98511-7374 </h1>
+                <h1 class="lead" data-i18n="contact.github">Github: luana-barbosa</h1>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Luana Barbosa 2024</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+
+    <script>
+        // Configuração da biblioteca i18next
+        i18next.init({
+            lng: 'pt', // Idioma padrão
+            resources: {
+                en: {
+                    translation: {
+                        "header": {
+                            "toolbar": "Welcome",
+                            "name": "Luana Barbosa",
+                            "title": "Android Developer"
+                        },
+                        "about": {
+                            "title": "About Me",
+                            "description": "Born in Salvador, looking for my place in the world, currently working in the technology area in Android development, graduated in systems analysis, I am completely fascinated by the area, I like challenges and learning more and more to be the best at what I do. I seek to work in the technology area using my skills with the latest in the market, participating in projects, developments and software analysis, thus being able to grow professionally."
+                        },
+                        "experience": {
+                            "title": "Experience",
+                            "cora": {
+                                "title": "Cora",
+                                "description": "I implement new functionalities and improvements to the Coraliados feature using Kotlin/Compose, ensuring that the code is efficient, scalable and well-structured. I perform continuous maintenance of the feature, identifying and fixing bugs, in addition to optimizing the performance and stability of the application, using MVVM, Navigation, Compose, Retrofit, Koin, among others.",
+                                "date": "May/2024 - Present",
+
+                            },
+                            "petz": {
+                                "title": "Petz",
+                                "description": "I work on creating and maintaining user loyalty, using Kotlin, MVVM architecture, MVP and libraries such as: Coroutines, Retrofit,Mockito Koin, Jetpack Compose, Junit4 among others. I made deliveries as a ClubZ tab and was actively involved in the launch of SuperApp.",
+                                "date": "Jun/2022 - May/2024",
+
+                            },
+                            "boticario": {
+                                "title": "Grupo Boticário",
+                                "description": "I developed the Reseller's Digital Account, this application is developed using Kotlin, MVP architecture. I delivered Clean Code and Architecture and bug fixes for being an app that is being repackaged for a new MVVM framework.",
+                                "date": "Feb/2022 - Oct/2022",
+
+                            },
+                            "role": "Android Developer",
+                        },
+                        "education": {
+                            "title": "Academic Background",
+                            "university": "Uninter",
+                            "course": "System Analysis and Development",
+                            "description": "Trains professionals capable of developing, analyzing, designing, implementing, and updating information systems for various activity sectors, where we acquire a solid theoretical base and an intense practical experience in project programming.",
+                            "date": "April 2020 - August 2022"
+                        },
+                        "skills": {
+                            "title": "Skills",
+                            "subtitle": "Programming Languages & Tools",
+                            "mvvm": "MVVM and Clean Architecture",
+                            "agile": "Agile Methodologies",
+                            "unit_tests": "Unit Tests",
+                            "rest": "REST and JSON"
+                        },
+                        "contact": {
+                            "title": "Social Networks and Contact",
+                            "location": "Salvador/BA - Brazil",
+                            "email": "Email: luana_barbosa93@hotmail.com",
+                            "phone": "Contact: (+55) 11 98511-7374",
+                            "github": "Github: luana-barbosa"
+                        }
+                    }
+                },
+                pt: {
+                    translation: {
+                        "header": {
+                            "toolbar": "Seja bem-vindo",
+                            "name": "Luana Barbosa",
+                            "title": "Desenvolvedora Android"
+                        },
+                        "about": {
+                            "title": "Sobre mim",
+                            "description": "Nascida em Salvador, buscando o meu lugar no mundo, atualmente atuando na área de tecnologia em desenvolvimento Android, graduada em análise de sistemas, sou completamente fascinada pela área, gosto de desafios e aprender cada vez mais para ser a melhor no que faço. Busco atuar na área de tecnologia utilizando as minhas skills com o que há de mais novo no mercado, participando de projetos, desenvolvimentos e análises de software, podendo assim crescer profissionalmente."
+                        },
+                        "experience": {
+                            "title": "Experiência",
+                            "cora": {
+                                "title": "Cora",
+                                "description": "Implemento novas funcionalidades e melhorias no recurso Coraliados usando Kotlin/Compose, garantindo que o código seja eficiente, escalável e bem estruturado. Realizo manutenção contínua do recurso, identificando e corrigindo bugs, além de otimizar a performance e estabilidade da aplicação, usando MVVM, Navigation, Compose, Retrofit, Koin, entre outros.",
+                                "date": "Mai/2024 - Present",
+
+                            },
+                            "petz": {
+                                "title": "Petz",
+                                "description": "Atuei na criação e manutenção da fidelidade do usuário, usando Kotlin, arquitetura MVVM, MVP e bibliotecas como: Coroutines, Retrofit, Mockito Koin, Jetpack Compose, Junit4 entre outros. Fiz entregas como aba de Fidelidade, Ofertas e Cupons.",
+                                "date": "Jun/2022 - Mai/2024",
+                            },
+                            "boticario": {
+                                "title": "Grupo Boticário",
+                                "description": "Desenvolvi a conta Digital da Revendedora, este aplicativo está foi desenvolvido usando Kotlin, arquitetura MVP. Fiz entregas de Clean Code e Arquitetura e soluções de bug por ser um app que está sendo remontado para uma nova estrutura MVVM.",
+                                "date": "Fev/2022 - Out/2022",
+
+                            },
+
+                            "role": "Desenvolvedora Android",
+                        },
+                        "education": {
+                            "title": "Formação Acadêmica",
+                            "university": "Uninter",
+                            "course": "Análise e Desenvolvimento de Sistemas",
+                            "description": "Forma profissionais capazes de desenvolver, analisar, projetar, implementar e atualizar sistemas de informação para diversos setores de atividades, onde adquirimos uma base teórica solida e uma intensa vivência prática na programação de projetos.",
+                            "date": "Abril 2020 - Agosto 2022"
+                        },
+                        "skills": {
+                            "title": "Habilidades",
+                            "subtitle": "Linguagens de Programação & Ferramentas",
+                            "kotlin": "Kotlin",
+                            "compose": "Compose",
+                            "git": "Git/GitFlow",
+                            "github": "Github",
+                            "mvvm": "MVVM e Arquitetura Limpa",
+                            "agile": "Metodologias Ágeis",
+                            "firebase": "Firebase",
+                            "unit_tests": "Testes Unitários",
+                            "android_sdk": "Android SDK",
+                            "jetpack": "Android Jetpack Components",
+                            "ci_cd": "CI/CD",
+                            "play_store": "Play Store",
+                            "rest": "REST e JSON"
+                        },
+                        "contact": {
+                            "title": "Redes Sociais e Contato",
+                            "location": "Salvador/BA - Brasil",
+                            "email": "Email: luana_barbosa93@hotmail.com",
+                            "phone": "Contato: (+55) 11 98511-7374",
+                            "github": "Github: luana-barbosa"
+                        }
+                    }
+                },
+                es: {
+                    translation: {
+                        "header": {
+                            "toolbar": "Bienvenido",
+                            "name": "Luana Barbosa",
+                            "title": "Desarrolladora Android"
+                        },
+                        "about": {
+                            "title": "Sobre mí",
+                            "description": "Nacida en Salvador, buscando mi lugar en el mundo, actualmente trabajando en el área de tecnología en desarrollo de Android, graduada en análisis de sistemas, estoy completamente fascinada por el área, me gustan los desafíos y aprender más y más para ser la mejor en lo que hago. Busco trabajar en el área de tecnología usando mis habilidades con lo último en el mercado, participando en proyectos, desarrollos y análisis de software, pudiendo así crecer profesionalmente."
+                        },
+                        "experience": {
+                            "title": "Experiencia",
+                            "cora": {
+                                "title": "Cora",
+                                "description": "Implemento nuevas funcionalidades y mejoras en la función Coraliados utilizando Kotlin/Compose, asegurando que el código sea eficiente, escalable y bien estructurado. Mantengo continuamente la función, identificando y corrigiendo errores, además de optimizar el rendimiento y estabilidad de la aplicación, utilizando MVVM, Navigation, Compose, Retrofit, Koin, entre otros.",
+                                "date": "Mayo/2024 - Presente"
+                            },
+                            "petz": {
+                                "title": "Petz",
+                                "description": "Actué en la creación y mantenimiento de la fidelidad del usuario, utilizando Kotlin, arquitectura MVVM, MVP y bibliotecas como: Coroutines, Retrofit, Mockito Koin, Jetpack Compose, Junit4 entre otros. Realicé entregas como la pestaña de Fidelidad, Ofertas y Cupones.",
+                                "date": "Junio/2022 - Mayo/2024"
+                            },
+                            "boticario": {
+                                "title": "Grupo Boticário",
+                                "description": "Desarrollé la cuenta Digital de la Revendedora, esta aplicación fue desarrollada utilizando Kotlin, arquitectura MVP. Realicé entregas de Clean Code y Arquitectura y soluciones de errores ya que es una aplicación que está siendo reconstruida para una nueva estructura MVVM.",
+                                "date": "Febrero/2022 - Octubre/2022"
+                            },
+                            "role": "Desarrolladora Android"
+                        },
+                        "education": {
+                            "title": "Antecedentes Académicos",
+                            "university": "Uninter",
+                            "course": "Análisis y Desarrollo de Sistemas",
+                            "description": "Forma profesionales capaces de desarrollar, analizar, diseñar, implementar y actualizar sistemas de información para diversos sectores de actividad, donde adquirimos una base teórica sólida y una intensa experiencia práctica en la programación de proyectos.",
+                            "date": "Abril 2020 - Agosto 2022"
+                        },
+                        "skills": {
+                            "title": "Habilidades",
+                            "subtitle": "Lenguajes de Programación y Herramientas",
+                            "kotlin": "Kotlin",
+                            "compose": "Compose",
+                            "git": "Git/GitFlow",
+                            "github": "Github",
+                            "mvvm": "MVVM y Arquitectura Limpia",
+                            "agile": "Metodologías Ágiles",
+                            "firebase": "Firebase",
+                            "unit_tests": "Pruebas Unitarias",
+                            "android_sdk": "Android SDK",
+                            "jetpack": "Componentes Android Jetpack",
+                            "ci_cd": "CI/CD",
+                            "play_store": "Play Store",
+                            "rest": "REST y JSON"
+                        },
+                        "contact": {
+                            "title": "Redes Sociales y Contacto",
+                            "location": "Salvador/BA - Brasil",
+                            "email": "Correo: luana_barbosa93@hotmail.com",
+                            "phone": "Contacto: (+55) 11 98511-7374",
+                            "github": "Github: luana-barbosa"
+                        }
+                    }
+                },
+            }
+        }, function (err, t) {
+            // Inicializar a tradução com jQuery
+            jqueryI18next.init(i18next, $, {
+                useOptionsAttr: true
+            });
+            // Atualizar a tradução na página
+            $('body').localize();
+        });
+        // Alternar idioma ao clicar na bandeira
+        $('#lang-en').on('click', function () {
+            i18next.changeLanguage('en', function () {
+                $('body').localize();
+            });
+        });
+        $('#lang-pt').on('click', function () {
+            i18next.changeLanguage('pt', function () {
+                $('body').localize();
+            });
+        });
+        $('#lang-es').on('click', function () {
+            i18next.changeLanguage('es', function () {
+                $('body').localize();
+            });
+        });
+    </script>
+</body>
+
+</html>
